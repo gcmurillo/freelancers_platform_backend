@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'django_countries',
     'persons',
     'multiselectfield',
+    'rest_framework',
+    'django_filters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
