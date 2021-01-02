@@ -18,3 +18,9 @@ class UserDetailSerializer(serializers.ModelSerializer):
             'last_name',
             'email',
         ]
+
+
+class ProfileListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = "__all__"
