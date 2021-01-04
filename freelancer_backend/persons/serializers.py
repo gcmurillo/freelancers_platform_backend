@@ -41,3 +41,25 @@ class ProfileDetailSerializer(serializers.ModelSerializer):
             'years_of_experience',
             'joined_at',
         ]
+
+
+class ExperienceItemListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExperienceItem
+        fields = '__all__'
+
+
+class ExperienceItemDetailSerializer(serializers.ModelSerializer):
+    user = UserDetailSerializer()
+
+    class Meta:
+        model = ExperienceItem
+        fields = [
+            'id',
+            'techs_used',
+            'description',
+            'since',
+            'to',
+            'company',
+            'user'
+        ]
