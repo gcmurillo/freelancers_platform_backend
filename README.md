@@ -3,7 +3,7 @@
 ## Description
 The propose of this project is to manage platform data thought API REST services. 
 
-## How to setpu
+## How to setup
 1. Create Python3 venv
 ``` bash
 $ python3 -m venv .venv
@@ -24,4 +24,6 @@ $ pip install -r requeriments.txt
 $ python manage.py makemigration
 $ python manage.py migrate
 ```
-
+## IMPORTANT!
+- Use [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) to manage branches.
+- All the PRs should have a review to be completed.
